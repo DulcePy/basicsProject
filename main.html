@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ribeye+Marrow&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Photography 📷🤩</title>
+    <style>
+      body {
+        background: rgb(86, 10, 107);
+      }
+
+      h1 {
+        text-align: center;
+        font-family: "Ribeye Marrow", serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+
+      h2 {
+        text-align: center;
+        font-family: "Ribeye Marrow", serif;
+      }
+
+      p {
+        font-size: 16px;
+        text-align: justify;
+        line-height: 1.5;
+      }
+
+      img {
+        max-width: 100%;
+      }
+
+      .learn-more {
+        display: block;
+        margin: 8px auto;
+        border: none;
+        background: rgb(86, 10, 107);
+        border-radius: 8px;
+        padding: 10px 15px;
+      }
+      .learn-more:hover {
+        background: rgb(148, 30, 148);
+        cursor: pointer;
+      }
+      .learn-more a {
+        font-size: 14px;
+        color: white;
+        text-decoration: none;
+      }
+
+      .container {
+        max-width: 600px;
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        margin: 20px auto;
+      }
+
+      footer {
+        text-align: center;
+        margin: 10px 0;
+        color: white;
+        font-size: 18px;
+      }
+      footer a {
+        color: white;
+      }
+      footer a:hover {
+        color: palevioletred;
+      }
+
+      .dark-theme {
+        font-size: 12px;
+        background: rgb(148, 30, 148);
+        color: white;
+        padding: 6px 10px;
+        display: block;
+        margin: 8px auto;
+        border: none;
+        border-radius: 8px;
+      }
+      .dark-theme:hover {
+        color: white;
+        background: rgb(83, 12, 83);
+      }
+
+      .intro-photo {
+        border-radius: 8px;
+        transition: all 150ms ease-in-out;
+      }
+      .intro-photo:hover {
+        filter: contrast(80%);
+        transform: scale(1.1);
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+        margin: 15px 0;
+      }
+      .grid img {
+        width: 100%;
+        border-radius: 8px;
+        transition: all 150ms ease-in-out;
+      }
+      .grid img:hover {
+        transform: scale(1.4);
+      }
+
+      .dark {
+        background: #142d4c;
+      }
+      .dark .container {
+        background: #385170;
+        color: white;
+      }
+
+      .dark .learn-more {
+        background: #142d4c;
+      }
+      .dark .learn-more:hover {
+        background: #244c7c;
+      }
+
+      .dark footer a:hover {
+        color: #244c7c;
+      }
+
+      .dark .dark-theme {
+        background: #244c7c;
+      }
+
+      .dark .dark-theme:hover {
+        background: #0a1a2e;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="dark-theme">Change Theme</button>
+    <div class="container">
+      <h1>📷 Photography 📷</h1>
+      <h2>Capturing beautiful landscapes — the perfect hobby</h2>
+      <p>
+        Photography is a form of expression that combines art and technique to
+        capture moments, emotions, and details of the world around us. Through a
+        camera - whether professional or even just a phone - it is possible to
+        freeze time in an image, conveying feelings without the need for words.
+        As an art, photography allows the creator to show their vision of the
+        world, playing with light, color, shapes, and emotions.
+      </p>
+      <a href="https://en.wikipedia.org/wiki/Photography" target="_blank">
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/162/812/original/photo1.jpg?1744340753"
+          alt=""
+          class="intro-photo"
+        />
+      </a>
+      <p>
+        Each photograph can tell a story, evoke memories, or invite reflection.
+        As a technical skill, it involves knowledge about how to use the camera,
+        focusing, exposure, framing, and other elements that help create well -
+        composed images. Learning these technical aspects is essential to use
+        the camera as a creative tool rather than just a device that records
+        what it sees. Today, photography is a part of our everyday lives - from
+        family photos to professional art, from social media to advertising
+        campaigns. The beauty is that you don't need to be an expert to get
+        started; all it takes is a curious eye, careful observation, and the
+        courage to capture what inspires you.
+      </p>
+      <div class="grid">
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/162/811/original/photo2.jpg?1744340744"
+          alt=""
+        />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/162/810/original/photo3.jpg?1744340736"
+          alt=""
+        />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/162/809/original/photo4.jpg?1744340727"
+          alt=""
+        />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/162/808/original/photo5.jpg?1744340717"
+          alt=""
+        />
+      </div>
+      <button class="learn-more">
+        <a
+          href="https://en.wikipedia.org/wiki/Category:Photographic_techniques"
+          target="_blank"
+          >Learn more</a
+        >
+      </button>
+    </div>
+    <footer>
+      Coded by
+      <a href="https://github.com/DulcePy" target="_blank">Dulce Figueredo</a>
+    </footer>
+
+    <script>
+      function changeTheme() {
+        let bodyPage = document.querySelector("body");
+
+        if (bodyPage.classList.contains("dark")) {
+          bodyPage.classList.remove("dark");
+        } else {
+          bodyPage.classList.add("dark");
+        }
+      }
+
+      let darkTheme = document.querySelector(".dark-theme");
+      darkTheme.addEventListener("click", changeTheme);
+    </script>
+  </body>
+</html>
